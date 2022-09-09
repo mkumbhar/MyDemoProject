@@ -1,0 +1,50 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+
+platform :ios do
+  desc "Description of what the lane does"
+  
+   lane :build do
+   
+    
+    podInstall
+
+    gym(
+      workspace: "MyDemoProject.xcworkspace",
+      scheme: "MyDemoProject",
+      configuration: "Debug",
+      output_directory: './fastlane/Builds',
+      export_method: 'development',
+      export_team_id: 'K2AKZ6CB76',
+      export_options: "./fastlane/AppExportOptions.plist"
+    )
+
+  
+  end
+
+  
+
+  lane :podInstall do
+    cocoapods(
+      clean: true,
+      podfile: "./Podfile",
+      repo_update: true
+    )
+  end
+
+end

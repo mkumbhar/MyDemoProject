@@ -1,0 +1,13 @@
+#IDE tools that should not be released
+
+.DS_Store
+.idea/
+
+MyDemoProject/MyDemoProject.xcodeproj/xcuserdata/
+MyDemoProject/MyDemoProject.xcodeproj/project.xcworkspace/
+MyDemoProject/MyDemoProject.xcworkspace/
+MyDemoProject/Pods
+MyDemoProject/fastlane/
+xcschememanagement.plist
+MyDemoProject/Podfile.lock
+MyDemoProject/Gemfile.lock

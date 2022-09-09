@@ -1,0 +1,47 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '12.0'
+use_frameworks!
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+target 'MyDemoProject' do
+  # Comment the next line if you don't want to use dynamic frameworks
+
+  # Pods for MyDemoProject
+  pod 'Firebase/Core'
+  pod 'Firebase/Analytics'
+  pod 'NewRelicAgent'
+
+  pod 'AMPopTip'
+  pod 'Alamofire'
+  pod 'AppAuth'
+  pod 'Atributika'
+  pod 'Charts'
+  pod 'DLRadioButton'
+  pod 'IGListDiffKit'
+  pod 'IGListKit'
+  pod 'MBCircularProgressBar'
+  pod 'MBProgressHUD'
+  pod 'Mocker'
+  pod 'ObjectMapper'
+  pod 'PhoneNumberKit'
+  pod 'PromisesObjC'
+  pod 'Result'
+  pod 'RxCocoa'
+  pod 'RxSwift'
+  pod 'SDWebImage'
+  pod 'SkeletonView'
+  pod 'SnapKit'
+  pod 'Socket.IO-Client-Swift'
+  pod 'Starscream'
+  pod 'SwiftAlgorithms'
+  pod 'SwiftSignatureView'
+  pod 'SwiftyBeaver'
+  pod 'Swinject'
+  pod 'TTTAttributedLabel'
+  pod 'UIColor_Hex_Swift'
+  pod 'nanopb'
+
+end
